@@ -31,7 +31,7 @@ screen recipes():
 
             null width 40
 
-        ##SYNTHESIS PAGE
+        ##RECIPE PAGE
             frame:
                 style "craft_content_frame"
                 use recipeinfo(whichitem)
@@ -43,9 +43,6 @@ screen recipes():
 style craft_outer_frame:
     align (.5,.5)
     padding (40,20)
-style craft_navigation_frame:
-    xsize 280
-    yfill True
 style craft_content_frame:
     xsize 700
     ysize 560
@@ -131,7 +128,7 @@ style recipe_button:
     ysize 48
     padding (0,0)
     idle_background "#fff"
-    hover_background "#FFAFCF"#"#ffc6ea"
+    hover_background "#FFAFCF"
     selected_idle_background "#FFE8F1"
     selected_hover_background "#FFAFCF"
 # style recipe_button_text:
@@ -209,7 +206,7 @@ screen recipeinfo(whichitem):
                 text whichitem.info style "making_text"
 
     textbutton _("Synthesize..."):
-        style "synthesis_button"
+        style "go_button"
         action ShowTransient("making", whichitem=whichitem)
         sensitive check_ingredients(whichitem)
 
@@ -312,7 +309,6 @@ screen making(whichitem):
 
             # make the item!
             textbutton _("GO!"):
-                text_bold True
                 action [ SetVariable("newitem", whichitem),
                     Function(whichitem.make, amount),
                     Jump("craft_success") ]
