@@ -8,11 +8,11 @@ feel free to modify these scripts to your heart's content. it's ok to use it for
 ## HOW TO USE
 
 you can download the sample project and guide pdf from here: https://nomnomnami.itch.io/syrup-lite-rpg-framework
-the pdf is 18 pages and has much more detailed instructions for beginner programmers.
+the pdf is 20+ pages and has much more detailed instructions for beginner programmers.
 
 all the scripts will work with ren'py version 7.3.5.606 and up!
 they're split into modules, so you can pick and choose the features you want.
-crafting+shop requires item scripts to work, but battling works on its own.
+crafting+quests+shop require item scripts to work, but battling works on its own.
 
 below is a summary of what you can find in each file.
 
