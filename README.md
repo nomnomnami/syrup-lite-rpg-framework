@@ -1,5 +1,5 @@
 # Syrup Lite RPG Framework
-inventory, shop, crafting, and battle systems for ren'py!
+inventory, shop, crafting, quests, and battle systems for ren'py!
 
 originally designed for Syrup 2: Candy Alchemy RPG. now it's released to the world...!
 
@@ -43,6 +43,14 @@ define your items and category lists here. add your own functions to do even mor
 ### item-screens.rpy
 
 inventory and currency display. the grid is adjustable (shows 50 items by default)
+
+### quest-definitions.rpy
+
+define quests here. currently only exchanges items for money.
+
+### quest-screens.rpy
+
+quest management screens, plus a quest complete notifier.
 
 ### shop-screens.rpy
 

@@ -192,13 +192,10 @@ screen buying(whichitem, howmuch, selling=False):
             if howmuch > 0:
                 if selling:
                     textbutton _("SELL"):
-                        text_bold True
                         action [ Function(whichitem.sell, amount), SetVariable("selected_item", None), Hide("buying")]
                 else:
                     textbutton _("BUY"):
-                        text_bold True
                         action [ SensitiveIf((whichitem.value*amount)<=gold), Function(whichitem.buy, amount), Hide("buying")]
             else:
                 textbutton _("TOSS"):
-                    text_bold True
                     action [ Function(whichitem.toss, amount), SetVariable("selected_item", None), Hide("buying")]

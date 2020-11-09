@@ -277,14 +277,15 @@ style offset_return_button:
 style offset_return_button_text is choice_button_text:
     xalign 0
 
-style synthesis_button:
+style go_button:
     idle_background "#ffe8f1"
     hover_background "#ffb4cd"
     insensitive_background "#ffe8f1"
     xysize (500, 100)
     align (.76,.9)
-style synthesis_button_text:
+style go_button_text:
     size gui.special_label_text_size
+    bold True
     xalign .5
     idle_color "#fff"
     hover_color "#fffba1"
@@ -295,10 +296,10 @@ style making_frame:
     xysize (500, 400)
     align (.5,.5)
     padding (30,30)
-style making_button is synthesis_button:
+style making_button is go_button:
     xysize (400, 100)
     align (.5,.5)
-style making_button_text is synthesis_button_text
+style making_button_text is go_button_text
 
 
 ## move this to gui.rpy if you want
